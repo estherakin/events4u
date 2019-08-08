@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-
-
     <title>Events4U</title>
-    <!-- Linking javascript source -->
-    <script src = 'ourscript.js'></script>
 
     <!-- Adding the Bootstrap Core -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,9 +12,10 @@
 
   </head>
 
+<!-- I have filled the text spaces with loeem ipsum text for now -->
 
   <body>
-
+    PAGE 2
     <!-- Adding the first instruction for the paralax scrolling effect-->
     <div class="bgimg-1">
       <div class="caption">
@@ -49,9 +46,28 @@
     <div class="bgimg-3">
       <div class="caption">
           <!-- Considering making this into a link to the next pages of the site! -->
-        <a href="homepage.html"><span class="border" id='split'>Enter site</span></a>
+        <span class="border" id='split'>Enter site</span>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -61,6 +77,32 @@
     <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
   <script src="javascript/interaction.js" ></script>
+
+
+
+
+  <body>
+
+  <h1>My First Google Map</h1>
+
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+  <script>
+  function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs-8y-VAYkm2OWl0sTqN5WUbH3ngvlgIM&callback=myMap"></script>
+
+  </body>
+
+
+
 
   </body>
 </html>
