@@ -6,7 +6,7 @@
       type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
       type="text/javascript" charset="utf-8"></script>
-    <title>Venue Hire</title>
+    <title>Entertainment</title>
 
     <!-- Adding the Bootstrap Core -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +16,6 @@
   </head>
 
   <body>
-
 	<!-- Just adding in the navigation bar -->
 	<div class="wrapper">
         <!-- Sidebar  -->
@@ -40,23 +39,17 @@
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="DJ.html">DJ's</a>
+                            <a href="#">DJ's</a>
                         </li>
                         <li>
-                            <a href="Decor.html">Decorations</a>
+                            <a href="#">Decorations</a>
                         </li>
                         <li>
-                            <a href="Catering.html">Catering</a>
+                            <a href="#">Catering</a>
                         </li>
-            						<li>
-            							<a href="venue-hire.html">Venue Hire</a>
-            						</li>
-                        <li>
-                          <a href="Entertainment.html">Entertainment</a>
-                        </li>
-                        <li>
-                          <a href="useful-links.html">Useful Links</a>
-                        </li>
+						<li>
+							<a href="venue-hire.html">Venue Hire</a>
+						</li>
                     </ul>
                 </li>
                 <li>
@@ -98,32 +91,32 @@
                 </div>
             </nav>
             <div class="container">
-              <p class = "descriptions"> Big, small or somewhere in between - Use the interactive map
-                below to find all the venue spaces near you!</p>
+              <p class = "descriptions"> Fire-dancing? Circus performers? Opera singers, or an entire classica orchestra? Maybe you want a bouncy castle
+                to bring out your inner child? Use the interactive map
+                below to find all the entertainment services near you!</p>
             </div>
+
             <div style="width: 100%; height: 480px" id="mapContainer"></div>
-            <script>
-              // Initialize the platform object:
-              var platform = new H.service.Platform({
-              'apikey': '-vZg1Tee3N42vxn-PZVeRYL4QTUPLPwx659nbRC_qd8'
-              });
+                        <script>
+                          // Initialize the platform object:
+                          var platform = new H.service.Platform({
+                          'apikey': '-vZg1Tee3N42vxn-PZVeRYL4QTUPLPwx659nbRC_qd8'
+                          });
 
-              // Obtain the default map types from the platform object
-              var maptypes = platform.createDefaultLayers();
+                          // Obtain the default map types from the platform object
+                          var maptypes = platform.createDefaultLayers();
 
-              // Instantiate (and display) a map object:
-              var map = new H.Map(
-              document.getElementById('mapContainer'),
-              maptypes.vector.normal.map,
-              {
-                zoom: 10,
-                center: { lat: 51.5074, lng: 0.1278 }
-              });
-            </script>
-            </body>
-          </html>
+                          // Instantiate (and display) a map object:
+                          var map = new H.Map(
+                          document.getElementById('mapContainer'),
+                          maptypes.vector.normal.map,
+                          {
+                            zoom: 10,
+                            center: { lat: 51.5074, lng: 0.1278 }
+                          });
+                        </script>
 
-
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
