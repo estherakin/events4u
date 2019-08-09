@@ -83,34 +83,64 @@
 			
 			<!-- Main page content -->
 			
-			<!-- Header -->
-            <h3>What are you looking for?</h3>
-			<p>Select an option below<p>
-			
-			<!-- Images of things -->
+			<!-- Forms -->
 			<div class = "container">
-				<div class = "row">
-					<div class = "col-sm">
-						<a href = ""><img class = "menu-icon" src="imags/DJ's.jpg" alt="DJ's"/></a>
+				<form id="contact-form" method="post" action="contact.php" role="form">
+
+					<div class="messages"></div>
+
+					<div class="controls">
+
+						<div class="row">
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="form_name">First name</label>
+									<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="form_lastname">Last name</label>
+									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<div class="form-group">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Message for us" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<input type="submit" class="btn btn-success btn-send" value="Send message">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<p class="text-muted">
+									<strong>*</strong> These fields are required. 
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class = "col-sm">
-						<a href = "venue-hire.html"><img class = "menu-icon" src="imags/VenueHire.jpg" alt="Venue Hire"/></a>
-					</div>
-					<div class = "col-sm">
-						<a href = ""><img class = "menu-icon" src="#" alt="Add later"/></a>
-					</div>
-				</div>
-				<div class = "row">
-					<div class = "col-sm">
-						<a href = ""><img class = "menu-icon" src="imags/Catering.jpg" alt="Catering"/></a>
-					</div>
-					<div class = "col-sm">
-						<a href = ""><img class = "menu-icon" src="imags/Decor.jpg" alt="Decor button"/></a>
-					</div>
-					<div class = "col-sm">
-						<a href = ""><img class = "menu-icon" src="#" alt="Add later"/></a>
-					</div>
-				</div>
+
+				</form>
+				
 			</div>
 		</div>
     </div>

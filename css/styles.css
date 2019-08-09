@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: black;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -16,16 +16,19 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  /*background-image: url("https://media.giphy.com/media/y3PlWsF3RAECs/giphy.gif");*/
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("https://www.xmple.com/wallpaper/graph-paper-grey-black-grid-1920x1080-c2-000000-708090-l2-3-111-a-60-f-20.svg");
+  /*background-image: url("https://www.xmple.com/wallpaper/graph-paper-grey-black-grid-1920x1080-c2-000000-708090-l2-3-111-a-60-f-20.svg");*/
+  background-image: url("https://images8.alphacoders.com/408/408282.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("https://49.media.tumblr.com/8f8843793a5274949c6044bc6224f9cf/tumblr_nlmg4e7Oph1s8tx41o1_500.gif");
+  /*background-image: url("https://49.media.tumblr.com/8f8843793a5274949c6044bc6224f9cf/tumblr_nlmg4e7Oph1s8tx41o1_500.gif");*/
+  background-image: url("http://giphygifs.s3.amazonaws.com/media/Mk8gTuHA4pjFe/giphy.gif");
   min-height: 400px;
 }
 
@@ -35,15 +38,19 @@ body, html {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: black;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
+  background-color: black;
+  color: #f27200;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+
+.border{
+	background-color: black;
 }
 
 h3 {
@@ -70,6 +77,17 @@ strong {
 button{
 	color: #f27200;
 }
+
+.container{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("https://images8.alphacoders.com/408/408282.jpg");
+}
+
+#about-us-text{
+	color: black;
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -338,4 +356,26 @@ a.article:hover {
         display: none;
     }
 }
+/*Sidebar collapse button*/
+button#sidebarCollapse.btn.btn-info{
+	background-color: #333333;
+}
 
+/*Contact Form button*/
+
+.btn-success{
+	background-color: #333333;
+	border-color: #f27200;
+}
+
+.btn-success:hover{
+	background-color: #4c4c4c;
+}
+
+.menu-icon{
+	height: 25px%;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+	background-color: transparent;
+}
