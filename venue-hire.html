@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Venue Hire</title>
+
+    <!-- Adding the Bootstrap Core -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Adding link to our custom stylesheet -->
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+	<!-- Just adding in the navigation bar -->
+	<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Easy Access Menu</h3>
+                <strong>E4U</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">DJ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Decorations</a>
+                        </li>
+                        <li>
+                            <a href="#">Catering</a>
+                        </li>
+						<li>
+							<a href="venue-hire.html">Venue Hire</a>
+						</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contactus.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+		<!-- All the content has t lie under this div -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+					<!-- This is the code for the writing within the sidebar button-->
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+					<h2> Events4U </h2>
+                </div>
+            </nav>
+			<h1>My First Google Map</h1>
+			<div id="googleMap" style="width:100%;height:400px;"></div>	
+		</div>
+	<script>
+		function myMap() {
+		var mapProp= {
+		center:new google.maps.LatLng(51.508742,-0.120850),
+		zoom:5,
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+	</script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs-8y-VAYkm2OWl0sTqN5WUbH3ngvlgIM&callback=myMap"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+	<script src="javascript/interaction.js" ></script>
+
+  </body>
+
+
+</html>
