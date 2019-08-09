@@ -507,3 +507,8 @@ body {
 .sbutton.whatsapp {
   background: #00e676;
 }
+
+.link-big {
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+}
